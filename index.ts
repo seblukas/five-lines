@@ -332,8 +332,6 @@ class Air implements Tile {
     }
 
     draw(g: CanvasRenderingContext2D, x: number, y: number) {
-        this.color(g);
-        g.fillRect(x * TILE_SIZE, y * TILE_SIZE, TILE_SIZE, TILE_SIZE);
     }
 
     isEdible(): boolean {
@@ -528,6 +526,8 @@ class Player implements Tile {
         return false;
     }
 
+
+
     color(g: CanvasRenderingContext2D) {
     }
 
@@ -551,6 +551,7 @@ class Stone implements Tile {
     isFlux(): boolean {
         return false;
     }
+
 
     isUnbreakable(): boolean {
         return false;
